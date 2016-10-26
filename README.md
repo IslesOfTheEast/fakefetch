@@ -1,5 +1,5 @@
 # fake fetch (python)
-
+[![Python](https://img.shields.io/badge/Python|3-blue.svg?style=flat)](https://www.python.org/)
 ### what is fake fetch?
 
 nothing like screenfetch. 
