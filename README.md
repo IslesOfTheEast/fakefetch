@@ -6,7 +6,7 @@ nothing like screenfetch.
 I made this to make my computer a bit more personalised.
 
 ### demo
-![anc](https://github.com/JackCDK/browser-bomb/blob/master/images/bbomb_newrel.png)
+![anc](https://raw.githubusercontent.com/JackCDK/fakefetch/master/pics/ank.png)
 ### to-do list
 * add more ascii art
 * add color (already done with colorama, just testing it at this point)
