@@ -8,6 +8,7 @@ I made this to make my computer a bit more personalised.
 ### demo
 ![anc](https://raw.githubusercontent.com/JackCDK/fakefetch/master/pics/ank.png)
 ### to-do list
+* add auto detections for some things
 * add more ascii art
 * add color (already done with colorama, just testing it at this point)
 
