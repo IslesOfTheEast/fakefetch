@@ -59,7 +59,7 @@ linux = '''
 #arg stuff
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-l','--logo', choices=['anchor', 'axe', 'linux',], default='anchor', help='This will let you turn your apache2 server on or off and you can even restart it')
+parser.add_argument('-l','--logo', choices=['anchor', 'axe', 'linux',], default='anchor', help='choose the ascii art you want')
 
 
 args = parser.parse_args()
