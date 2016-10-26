@@ -2,12 +2,9 @@
 #made by JackCDK
 #all ascii art is from: http://chris.com/ascii/
 
-
-
-
-
 #as of 26/10/16 fakefetch.py does not have username, kernel, os or window manager detection. 
 #please add that info in by yourself for now
+
 import argparse
 from colorama import *
 
