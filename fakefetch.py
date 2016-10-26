@@ -1,7 +1,13 @@
 #!/usr/bin/python
 #made by JackCDK
-#add your own info in. I'm not gonna add hardware/os dection but, you can.
 #all ascii art is from: http://chris.com/ascii/
+
+
+
+
+
+#as of 26/10/16 fakefetch.py does not have username, kernel, os or window manager detection. 
+#please add that info in by yourself for now
 import argparse
 from colorama import *
 
