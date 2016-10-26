@@ -10,8 +10,8 @@ I made this to make my computer a bit more personalised.
 
 ### how to use fake fetch
 
-      ./fakefetch     --        displays default fake fetchinfo
-      ./fakefetch -l  --        displays ascii art of choice
+      ./fakefetch                 displays default fake fetchinfo
+      ./fakefetch -l              displays ascii art of choice
 
 
 ### to-do list
