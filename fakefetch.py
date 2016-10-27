@@ -31,7 +31,7 @@ anchor = '''
          \033[37m`\033[39m
 '''.format(getpass.getuser(),platform.release())
 
-linux = '''
+tux = '''
        \033[37ma8888b.
       \033[37md888888b.     \033[32m[{}]
       \033[37m8P"YP"Y88     \033[32m[OS]: \033[39mDebian 8.6 jessie
@@ -43,13 +43,6 @@ linux = '''
    \033[37md8:'  "  `::88b
   \033[37md8"         'Y88b
  \033[37m:8P    '      :888
-  \033[37m8a.   :     _a88P
-\033[37m._/"Yaa_:   .| 88P|
-\033[37m\    YP"    `| 8P  `.
-\033[37m/     \.___.d|    .'
-\033[37m`--..__)8888P`._.' \033[39m
-
-
 '''.format(getpass.getuser(),platform.release())
 
 
@@ -57,12 +50,12 @@ linux = '''
 #arg stuff
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-l','--logo', choices=['anchor', 'linux',], default='anchor', help='This will let you turn your apache2 server on or off and you can even restart it')
+parser.add_argument('-l','--logo', choices=['anchor', 'tux',], default='anchor', help='choose ascii logo')
 
 
 args = parser.parse_args()
 if args.logo == "anchor":
     print(anchor)
 
-elif args.logo == "linux":
-	print(linux)
+elif args.logo == "tux":
+	print(tux)
