@@ -6,16 +6,16 @@ nothing like screenfetch.
 I made this to make my computer a bit more personalised.
 
 ### demo
-![anc](https://raw.githubusercontent.com/JackCDK/fakefetch/master/pics/ank.png)
+![anc](https://raw.githubusercontent.com/JackCDK/fakefetch/master/pics/anchor.png)
 
 ### how to use fake fetch
 
-      ./fakefetch                 displays default fake fetchinfo
-      ./fakefetch -l              displays ascii art of choice
+      ./fakefetch.py                 displays default fake fetchinfo
+      ./fakefetch.py -l              displays ascii art of choice
 
 
 ### to-do list
-* add auto detections for some things
+* add auto detections for some things [✓]
 * add more ascii art
 * add color [✓]
 
