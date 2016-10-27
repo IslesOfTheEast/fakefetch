@@ -11,6 +11,9 @@ like screenfetch but with less fetching.
 
       ./fakefetch.py                 displays default fake fetchinfo
       ./fakefetch.py -l              displays ascii art of choice
+      ./fakefetch -l ctest           displays color test
+
+
 
 
 ### to-do list
