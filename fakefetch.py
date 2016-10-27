@@ -35,7 +35,7 @@ tux = '''
        \033[37ma8888b.
       \033[37md888888b.     \033[32m[{}]
       \033[37m8P"YP"Y88     \033[32m[OS]: \033[39mDebian 8.6 jessie
-      \033[37m8|o||o|88     \033[32m[Kernel]: \033[39m {}
+      \033[37m8|o||o|88     \033[32m[Kernel]:\033[39m {}
       \033[37m8'    .88     \033[32m[WM]:\033[39m OpenBox
       \033[37m8`._.' Y8.
      \033[37md/      `8b.   \033[40m  \033[41m  \033[42m  \033[43m  \033[44m  \033[45m  \033[46m  \033[47m \033[48m \033[49m
@@ -48,7 +48,6 @@ tux = '''
 
 colortest = '''
 
-
  \033[40m black \033[41m red \033[42m green \033[43m yellow \033[44m blue \033[45m purple \033[46m cyan \033[47m grey\033[48m \033[49m
  \033[40m black \033[41m red \033[42m green \033[43m yellow \033[44m blue \033[45m purple \033[46m cyan \033[47m grey\033[48m \033[49m
  \033[40m black \033[41m red \033[42m green \033[43m yellow \033[44m blue \033[45m purple \033[46m cyan \033[47m grey\033[48m \033[49m
@@ -57,20 +56,21 @@ colortest = '''
  \033[40m black \033[41m red \033[42m green \033[43m yellow \033[44m blue \033[45m purple \033[46m cyan \033[47m grey\033[48m \033[49m
  \033[40m black \033[41m red \033[42m green \033[43m yellow \033[44m blue \033[45m purple \033[46m cyan \033[47m grey\033[48m \033[49m
 
-'''
+ '''
 
 #arg stuff
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-l','--logo', choices=['anchor', 'tux','ctest'], default='anchor', help='choose ascii logo')
-
-
 args = parser.parse_args()
 if args.logo == "anchor":
+    os.system("clear")
     print(anchor)
 
 elif args.logo == "tux":
-	print(tux)
+    os.system("clear")
+    print(tux)
 
 elif args.logo == "ctest":
-	print(colortest)
+    os.system("clear")
+    print(colortest)
