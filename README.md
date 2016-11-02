@@ -5,7 +5,7 @@
 like screenfetch but with less fetching.
 
 ### screenshot
-![anc](https://raw.githubusercontent.com/JackCDK/fakefetch/master/pics/ank4.png)
+![anc](https://raw.githubusercontent.com/JackCDK/fakefetch/master/pics/anchor.png)
 
 ### how to use fake fetch
 
