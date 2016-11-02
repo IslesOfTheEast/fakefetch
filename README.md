@@ -12,7 +12,7 @@ like screenfetch but with less fetching.
       ./fakefetch.py                 displays default fake fetchinfo
       ./fakefetch.py -l              displays ascii art of choice
       
-#more
+##more commands
 
       ./fakefetch.py -l ctest        displays color test bar
       ./fakefetch.py -l noascii      displays info without ascii art
