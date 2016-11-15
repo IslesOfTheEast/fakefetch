@@ -14,7 +14,7 @@ like screenfetch but in python and with less fetching. (at this point in time)
       
 ###more commands
 
-      ./fakefetch.py -l ctest        displays color test bar
+      ./fakefetch.py -l ct           displays color test bar
       ./fakefetch.py -l noascii      displays info without ascii art
 
 
