@@ -2,7 +2,7 @@
 [![Python](https://img.shields.io/badge/Python support-2.7|3-blue.svg?style=flat)](https://www.python.org/)
 ### what is fake fetch?
 
-like screenfetch but with less fetching.
+like screenfetch but in python and with less fetching. (at this point in time)
 
 ### screenshot
 ![anc](https://raw.githubusercontent.com/JackCDK/fakefetch/master/pics/anchor.png)
