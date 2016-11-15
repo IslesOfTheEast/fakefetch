@@ -20,7 +20,7 @@ like screenfetch but in python and with less fetching. (at this point in time)
 
 
 ### to-do list
-* add auto detections for some things [✓]
+* add auto detections for WM, DE and Distro.
 * add more ascii art
 * add color [✓]
 
