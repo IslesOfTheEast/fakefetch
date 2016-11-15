@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #made by JackCDK
-#all ascii art is from: http://chris.com/ascii/
+#most ascii art is from: http://chris.com/ascii/
 import argparse, getpass, platform, os
 from colorama import *
 
@@ -8,13 +8,13 @@ from colorama import *
 #details
 
 windowm = "Openbox" #window manager
-distro =  "Debian 8.5 Jessie" #distro
-#change these to fit your liking
+distro =  "Debian" #Distro Name
+#change these to fit your liking, I am trying to find a way to automate this, so hang in there.
 
 
 #ascii pics
 
-randomtest = '''
+wave = '''
   \033[41m  \033[49m
   \033[41m  \033[49m  \033[41m  \033[49m          \033[32m[{}]
   \033[41m  \033[49m  \033[41m  \033[49m  \033[41m  \033[49m      \033[32m[OS]:\033[39m {}
@@ -80,7 +80,7 @@ colortest = '''
 #arg stuff
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-l','--logo', choices=['anchor', 'tux','noascii','ctest'], default='anchor', help='choose ascii logo')
+parser.add_argument('-l','--logo', choices=['anchor','tux','noascii','soundwave','ct'], default='anchor', help='choose ascii logo')
 args = parser.parse_args()
 if args.logo == "anchor":
     os.system("clear")
@@ -94,6 +94,10 @@ elif args.logo == "noascii":
     os.system("clear")
     print(noascii)
 
-elif args.logo == "ctest":
+elif args.logo == "ct":
     os.system("clear")
     print(colortest)
+
+elif args.logo == "soundwave":
+    os.system("clear")
+    print(wave)
