@@ -8,7 +8,7 @@ from colorama import *
 #details
 
 windowm = "Openbox" #window manager
-distro =  "Debian" #Distro Name
+distro =  "GNU/Linux" #Distro Name
 #change these to fit your liking, I am trying to find a way to automate this, so hang in there.
 
 
@@ -36,6 +36,53 @@ noascii = '''
 
 '''.format(getpass.getuser(),distro,platform.release(),windowm)
 
+#linux distro art (from screenfetch)
+
+deb_logo = '''
+         \033[31m_,met$$$$$gg.
+      \033[31m,g$$$$$$$$$$$$$$$P.      \033[32m[{}]
+    \033[31m,g$$P""          Y$$. .    \033[32m[OS]:\033[39m {}
+   \033[31m,$$P'              `$$$.    \033[32m[Kernel]:\033[39m {}
+  \033[31m ,$$P       ,ggs.     `$$b:  \033[32m[WM]:\033[39m {}
+  \033[31m`d$$'     ,$P"'   .    $$$
+   \033[31m$$P      d$'     ,    $$P   \033[40m  \033[41m  \033[42m  \033[43m  \033[44m  \033[45m  \033[46m  \033[47m \033[48m \033[49m
+   \033[31m$$:      $$.   -    ,d$$
+   \033[31m$$\;      Y$b._   _,d$P
+   \033[31mY$$.    `.`"Y$$$$P"
+   \033[31m`$$b      "-.__
+    \033[31m`Y$$
+     \033[31m`Y$$.
+       \033[31m`$$b.
+         \033[31m`Y$$b.
+            \033[31m`"Y$b._
+                \033[31m`""""\033[39m'''.format(getpass.getuser(),distro,platform.release(),windowm)
+
+
+
+
+arch_logo = '''
+                   \033[36m-`
+                  \033[36m.o+`         \033[32m[{}]
+                 \033[36m`ooo/         \033[32m[OS]:\033[39m {}
+                \033[36m`+oooo:        \033[32m[Kernel]:\033[39m {}
+               \033[36m`+oooooo:       \033[32m[WM]:\033[39m {}
+               \033[36m-+oooooo+:
+             \033[36m`/:-:++oooo+:     \033[40m  \033[41m  \033[42m  \033[43m  \033[44m  \033[45m  \033[46m  \033[47m \033[48m \033[49m
+            \033[36m`/++++/+++++++:
+           \033[36m`/++++++++++++++:
+          \033[36m`/+++ooooooooooooo/`
+         \033[36m./ooosssso++osssssso+`
+        \033[36m.oossssso-````/ossssss+`
+       \033[36m-osssssso.      :ssssssso.
+      \033[36m:osssssss/        osssso+++.
+     \033[36m/ossssssss/        +ssssooo/-
+   \033[36m`/ossssso+/:-        -:/+osssso+-
+  \033[36m`+sso+:-`                 `.-/+oso:
+ \033[36m`++:.                           `-/+/
+ \033[36m.`                                 `/'\033[39m'''.format(getpass.getuser(),distro,platform.release(),windowm)
+
+
+#ascii art from chris.com
 
 anchor = '''
         \033[37m _
@@ -65,6 +112,8 @@ tux = '''
  \033[37m:8P    '      :888
 '''.format(getpass.getuser(),distro,platform.release(),windowm)
 
+#my own color test
+
 colortest = '''
 
  \033[40m black \033[41m red \033[42m green \033[43m yellow \033[44m blue \033[45m purple \033[46m cyan \033[47m grey\033[48m \033[49m
@@ -80,7 +129,7 @@ colortest = '''
 #arg stuff
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-l','--logo', choices=['anchor','tux','noascii','soundwave','ct'], default='anchor', help='choose ascii logo')
+parser.add_argument('-l','--logo', choices=['anchor','tux','debian','arch','noascii','soundwave','ct'], default='anchor', help='choose ascii logo')
 args = parser.parse_args()
 if args.logo == "anchor":
     os.system("clear")
@@ -89,6 +138,14 @@ if args.logo == "anchor":
 elif args.logo == "tux":
     os.system("clear")
     print(tux)
+
+elif args.logo == "arch":
+    os.system("clear")
+    print(arch_logo)
+
+elif args.logo == "debian":
+    os.system("clear")
+    print(deb_logo)
 
 elif args.logo == "noascii":
     os.system("clear")
