@@ -14,7 +14,7 @@ I am currently adding lots of ascii art so users of fakefetch will be able to fi
 
 * clone or download the script
 
-* when it is done type:
+* when it is done type this in a terminal:
 
        chmod +x fakefetch.py
        
