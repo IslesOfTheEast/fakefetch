@@ -1,9 +1,9 @@
 #!/usr/bin/python
 #made by JackCDK
 #most ascii art is from: http://chris.com/ascii/
+
 import argparse, getpass, platform, os
 from colorama import *
-
 
 #details
 
@@ -12,7 +12,7 @@ distro =  "GNU/Linux" #Distro Name
 #change these to fit your liking, I am trying to find a way to automate this, so hang in there.
 
 
-#ascii pics
+#ascii soundwave by me
 
 wave = '''
   \033[41m  \033[49m
@@ -85,12 +85,12 @@ arch_logo = '''
 #ascii art from chris.com
 
 anchor = '''
-        \033[37m _
+        \033[37m _         
         \033[37m(_)         \033[32m[{}]
          \033[37m|          \033[32m[OS]:\033[39m {}
     \033[37m()---|---()     \033[32m[Kernel]:\033[39m {}
          \033[37m|          \033[32m[WM]:\033[39m {}
-         \033[37m|
+         \033[37m|        
  \033[37m __     |     __   \033[40m  \033[41m  \033[42m  \033[43m  \033[44m  \033[45m  \033[46m  \033[47m \033[48m \033[49m
  \033[37m|\     /^\     /|
    \033[37m'..-'   '-..'
