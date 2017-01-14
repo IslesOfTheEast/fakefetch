@@ -21,6 +21,7 @@ I am currently adding lots of ascii art so users of fakefetch will be able to fi
 * then type:
 
        ./fakefetch.py
+       
 Please note! this will not work on windows.      
 
 ### how to use fake fetch
