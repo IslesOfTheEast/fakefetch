@@ -1,5 +1,5 @@
 # fakefetch
-[Python](https://img.shields.io/badge/Python support-2.7|3-blue.svg?style=flat)](https://www.python.org/)
+
 ### what is fakefetch?
 
 fakfetch is a small screenfetch like script for my linux desktop that is written in python. 
